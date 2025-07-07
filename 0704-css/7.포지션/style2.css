@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu{
+  background-color: palevioletred;
+  height: 100px;
+  width: 500px;
+}
+
+.nav {
+  background-color: aqua;
+  float: left;
+  width: 100px;
+  height: 300px;
+  
+}
+
+.content {
+  background-color: blueviolet;
+  float: left
+ 
+}
+
+.footer {
+  background-color: green;
+  height: 100px;
+  width: 500px;
+  clear: both;
+}
+
+
+.container {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}

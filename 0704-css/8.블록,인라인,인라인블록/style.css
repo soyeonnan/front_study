@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+span,a {
+  border: 1px solid  red;
+}
+
+/* 인라인 요소는 크기 지정을 못 함 */
+span {
+  width: 100px;
+  height: 200px;
+
+  /* 상하 마진을 적용도 못 함 */
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* 하지만 좌우마진 가능, 패딩도 가능 */
+a {
+  margin-left: 20px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+/* 인라인 태그를 블록으로 변환->디스플레이 */
+i {
+  display: block;
+  border: 1px solid red; 
+}
+
+/* 인라인 블록으로 변경 */
+ul > li {
+  display: inline-block;
+  border: 1px solid red;
+  width: 100px;
+
+  text-align: center;
+}
+
+ul {
+  border: 1px solid red;
+  text-align: center;
+}

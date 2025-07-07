@@ -1,0 +1,64 @@
+/* 기본 글꼴 크기가 16px임(h2같은 크기가 설정 된 태그들 제외 한 태그들!) */
+p {
+  /* 글꼴 크기 */
+  font-size: 32px;
+  /* 글꼴 두께 */
+ /* 100 : lighter
+    400 : nomal(기본값)
+    700 : bold
+    900 : bolder
+     */
+  font-weight: lighter;
+}
+
+body {
+  /* 줄 간격 (px,%,1em으로 조정 가능 )*/
+  /* 16px = 1em = 100% */
+  /* em은 소수점으로도 조정 가능 */
+  line-height: 32px;
+
+  /* 글꼴 */
+  /* 글꼴 이름이 띄어쓰기 되어있는겄은 '' (따옴표)를 꼭 사용! */
+  /* 밑엔 글꼴을 3번 지정한건데 1번이 안 되면 2번-> 순차적으로 마지막 글꼴이 최종이기 때문에 마지막은 꼭 다 사용되는 글꼴로 지정하기 */
+  font-family: 'Courier New', Courier, monospace;
+
+  /* 글꼴 스타일 */
+  font-style: italic;
+
+  /* 소문자를 작은 대문자로 바꿈 (한글 X)*/
+  font-variant: small-caps;
+
+}
+
+/* 스타일 -> 글꼴 크기 -> 글씨체 (순서 중요! 보통은 이렇게 한번에 안 함) */
+p {
+  font: italic bold 25px '굴림', Gulim;
+  font: bold italic small-caps 12px/1.2 '돋음', Gulim;
+}
+
+h5 {
+  /* 글꼴 색상 */
+  color: red;
+  color: #ff0000;
+  color: rgb(255, 0, 0);
+
+  /* 텍스트 효과 */
+  text-decoration: underline;
+
+  /* 대,소문자 설정 */
+  text-transform: uppercase;
+
+  /* 그림자 설정 (가로 세로 그림자퍼짐 그림자색)*/
+  text-shadow: 1px 2px 7px palevioletred;
+  text-shadow: 1px 2px 7px rgb(236, 208, 234);
+  /* 그림자는 누적 가능(따로 입력해도 되고 ,(콤마)로 이어서 한줄로도 가능) */
+
+  /* 자간(글자 사이의 간격) */
+  letter-spacing: 3px;
+
+  /* 단어 간격 */
+  word-spacing: 30px;
+
+  /* 정렬 */
+  text-align: center;
+}

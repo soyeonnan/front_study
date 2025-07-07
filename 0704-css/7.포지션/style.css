@@ -1,0 +1,41 @@
+/* float은 위치 (센터를 못 씀)*/
+.float {
+  float: left;
+}
+
+.clear {
+ clear: both;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.box1 {
+  background-color: rgb(238, 0, 0);
+}
+
+.box2 {
+  background-color: #0a0003a2;
+}
+
+.box3 {
+  background-color: #000000;
+  float: right;
+}
+
+.box4 {
+  background-color: rgb(48, 7, 235);
+
+  /* 가운데 정렬은 마진을 사용 */
+  margin: auto;
+}
+
+/* 하이를 지정 안 해주면 오버 플러우가 안됨? */
+.cotainer {
+  height: 200px;
+  border: 1px solid red;
+  overflow: scroll;
+}
+

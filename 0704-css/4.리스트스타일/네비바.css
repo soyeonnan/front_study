@@ -1,0 +1,27 @@
+.nav > li {
+  /* 리스트 없애기 */
+  list-style-type: none;
+
+  /* 정렬 (강제로 위치 조정)*/
+  float: left;
+
+  /* 크기 */
+  width: 20%;
+
+  /* 글자 위치 */
+  text-align: center;
+
+  background-color: rgb(216, 252, 255);
+  height: 30px;
+}
+
+a {
+  /* a 태그한테 텍스트 밑줄 제거 */
+  text-decoration: none;
+}
+
+/* 파비콘 넣고 제어는 폰트로 */
+i {
+  font-size: 16px;
+  color: rgb(255, 167, 229);
+}

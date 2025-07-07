@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<!-- 자동 재생이 막혀서 음소거를 설정해야지만 자동 재생이 됨 (정책이 매번 봐낌)-->
+ <!-- controls는 재생시킬 툴   --> 
+  <!-- autoplay 자동재생  -->
+ <!-- muted 음소거 -->
+  <!-- loop 반복 재생 -->
+  <audio src="../images/프리스타일-Y.mp3" controls autoplay muted loop>
+    <!-- 브라우저가 지원하지 못 하는 경우 -->
+  </audio>
+  
+
+  
+    <!-- 여러 경로를 설정해서 안 되면 다음 경로로 보내는 작업 -->
+    <audio autoplay controls>
+      <source src="../images/프리스타일-Y.mp3" type="audio/mp3">
+      <source src="../images/프리스타일-Y.wav" type="audio/wav">
+    </audio>
+
+    <!-- 동영상 삽입 -->
+    <video src="../images/nike.mp4" controls autoplay muted loop width="300px">
+
+    </video>
+
+    <!-- 유튜브-> 공유->퍼가기->복->붙 -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dWWQUE0o0EQ?si=VSSNLeaVxRQRcaFX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7vCK0VBuQLs?si=Y3NFiXUrO1UMOuuz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>

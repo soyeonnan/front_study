@@ -1,0 +1,44 @@
+ol {
+  
+  list-style-type: lower-roman;
+  background-color: rgb(203, 255, 255);
+}
+
+/* ul > li { */
+  /* list-style-type: square;
+  background-color: rgb(248, 231, 244);
+
+  /* 여기서는 이미지 크기 조정이 불가능 */
+  /* list-style-image: url("../../images/apeach.jpeg"); */
+
+  /* 목록 없애기 */
+  /* list-style-type: none; */
+
+  /* 이미지 불러오기 */
+  /* background-image: url("../../images/apeach.jpeg"); */
+  
+  /*  */
+  /* background-repeat: no-repeat; */
+
+  /* 이미지 사이즈 */
+  /* background-size: 5px; */
+
+  /* 위치 조정 */
+  /* background-position: left center; */
+
+  /* 여백(밖) */
+  /* margin: 0; */
+
+  /* 여백(안)-> 위->오른쪽->아래->왼 */ 
+  /* padding: 20px 0 20px 30px; */ 
+/* } */
+
+ul {
+list-style-position: inside;
+list-style: square inside;
+
+}
+
+li {
+  background-color: rgb(229, 229, 255);
+}

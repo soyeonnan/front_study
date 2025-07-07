@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<!-- action 서버 주소, method 전송 방식 -->
+  <form action="https://www.google.com/search" method="get">
+    <!-- text는 글 쓰는 곳, submit은 제출, value는 제출칸 이름 설정, name은 변수같은 입력값이 설정-->
+      <input type="text" name="q">
+      <input type="submit" value="검색">
+  </form>
+
+
+  <form >
+    <!-- size 글씨쓰는 칸 길이 제한, maxlength 검색어 길이 제한, autofocus 자동으로 바로 입력할 수 있게 하는 것,
+      minlength 최소 글자 수 설정, placeholder 입력칸에 뭘 적을 지 설명 입력, value 초반 입력값을 설정,
+      readonly 고정 시켜버림, disabled 비활성화(못 적게 막기), required 필수 입력만들기 -->
+    <input type="text" size="5" maxlength="5"
+     minlength="2" autofocus placeholder="아이디를 입력"
+      value="abc" readonly disabled >
+      <input type="text" required >
+
+  </form>
+
+  <form >
+    텍스트 : <input type="text" <br>
+    비밀번호 : <input type="password"<br>
+    <!-- value는 보내는 값이라고 생각하면 됨, checked 기본적으로 체크해줌 -->
+    라디오 버튼 : <input type="radio" name="yes-or-no" value="yes">예<input type="radio" name="yes-or-no" value="no" checked>아니오 <br>
+    체크박스 : <input type="checkbox" name="chk" value="Java"> Java
+              <input type="checkbox" name="chk" value="HTML" checked> HTML
+              <input type="checkbox" name="chk" value="CSS"> CSS
+      <!-- id 이름과 for 이름을 동일시 해줘야 같은 건지 인식함 + 글씨만 눌러도 체크 됨 -->
+       <input id="agree" type="checkbox"><label for="agree">약관동의</label>       
+
+
+       <br><br>
+      <input type="submit" value="전송">
+      <!-- 같은 폼 태그 영역 내에 있으면 리셋은 리셋 됨 -->
+      <input type="reset" value="리셋">
+      <!-- 버튼은 그냥 버튼 , 버튼 뒤엔는 on이라고 시작되는 이벤트들이 있는데 그 중 onclick은 누르면 알림창을 띄워줌,
+       alert부터는 자바스트립임 html로는 안됨 -->
+      <input type="button" value="버튼" onclick="alert('버튼 누름')">
+      <button>버튼2</button>
+
+      <!-- 파일은 파일전송 -->
+      <input type="file">
+
+      <!-- 글쓰기 입력칸이 생김 버전2 /rows 행수, clols 열수-->
+      <textarea rows="10" cols="40">ㅁㄴㅇ</textarea>
+
+
+      <!-- 셀렉트태그는 화살표 누르면 목록 나오는거 -->
+      <select name="color">
+          <option value="red">레미</option>
+          <option>사랑</option>
+          <option value="Yellow" selected>모모</option>
+          <option>보라</option>
+          <option>메이</option>
+          <option>하나</option>
+      </select>
+
+      <!-- 안 보임~ -->
+      <input type="hidden">
+
+      <!-- 달력~ -->
+      <input type="date"
+
+
+  </form>
+  
+</body>
+</html>

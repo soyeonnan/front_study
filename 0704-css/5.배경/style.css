@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(158, 207, 253);
+  background-image: url(../../images/kakaofriends.gif);
+
+  /* repeat -> X는 가로만 반복, Y는 세로만 반복 */
+  background-repeat: no-repeat;
+
+  /* 배경 이미지 크기 (커버는 브라우저 크기에 맞춰줌)*/
+  background-size: 200px;
+
+  /* 위치 조정 (top botton left light)*/ 
+ background-position: center center;
+  height: 3000;
+  background-attachment: fixed;
+  /* 이걸 따로가 아니라 한번에 적어도 됨 (사진참고)*/
+
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+h1 {
+  background-color: rgb(203, 242, 253);
+}
+p {
+  background-color: rgba(190, 221, 255, 50);
+}
+/* rgba에 4번쨰는 투명도 */
+/* 아이디 -> 클래스 -> 태그 순으로 적용 순위 */
+.bg {
+  background-color: rgb(213, 253, 240);
+}

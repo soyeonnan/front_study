@@ -1,0 +1,16 @@
+/* 하위 선택자 or 자식 선택자 */
+/* 아이디->자식태그 */
+#first p {
+  color: palevioletred;
+}
+
+/* >(꺽쇠)를 사용하면 바로 아래 자식한테만 적용 */
+#second > p {
+  background-color: rgb(251, 230, 252);
+}
+
+/* (띄어 쓸 경우)p는 태그, .inner는 클래스 */
+/* (붙혀 쓸 경우)p태그들 중에서 .inner */
+p.inner {
+  color: rgb(152, 67, 238);
+}
