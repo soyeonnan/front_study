@@ -20,8 +20,9 @@
 
 .content {
   background-color: blueviolet;
-  float: left
- 
+  float: left;
+  height: 100;
+  width: 100;
 }
 
 .footer {
