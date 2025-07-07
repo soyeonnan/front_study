@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 3000px;
+}
+
+header {
+  background-color: rgb(255, 229, 240);
+  padding: 10px;
+  overflow: auto;
+
+  position: sticky;
+  top: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+nav > ul > li {
+  display: inline-block;
+  margin-right: 20px;
+
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(252, 61, 61);
+ 
+}
+
+.logo {
+  float: left;
+
+}
+
+nav {
+  float: right;
+}
+
+content {
+  clear: both;
+  padding: 20px;
+}
+
+content > h1, content > p {
+  padding: 20px;
+}
+
+.bt {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(174, 199, 247);
+  border-radius: 50%;
+  text-align: center;
+
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+
+.bt i {
+  width: 50%;
+  height: 50%;
+  line-height: 50px;
+  color: rgb(60, 127, 226);
+}
+
+/* 가상 선택 기능(띄어쓰기하면 고장남) */
+.bt:hover {
+  background-color: blue;
+}

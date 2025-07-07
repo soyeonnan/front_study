@@ -1,0 +1,44 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.rel {
+  /* static을 기준으로 상대적 배치 */
+  position: relative;
+  right: 100px;
+  bottom: 50px;
+}
+
+div {
+  border: 1px solid red;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 200px;
+}
+
+.abs {
+  width: 100px;
+  height: 100px;
+
+  /* static기준이 아니라 부모 요소가 기준이 됨 
+  단, 부모가 static이 아니여야 함
+  만약 부모가 static이면 그 상위요소로 넘어가게 됨*/
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+
+  /* 앱솔루트는 중앙을 기준으로 가서 트랜스폼을 이용해서 다시 정렬*/
+  /* transform: translate(-50%,-50%); */
+  
+  /* 아래쪽 가운데 (내가 한 것) */
+  /* bottom: 0;
+  left: 50%;
+  transform: translate(-50%); */
+
+  /* top: 0;
+  left: -101px; 또는 right 100% */
+}
+

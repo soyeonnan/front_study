@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  position: sticky;
+  top: 0;
+}
+
+.menu {
+  top: 0;
+  float: left;
+  z-index: 99;
+  margin-left: 50%;
+}
+
+.con {
+  width: 10px;
+  height: 10px;
+  float: left;
+
+}
+
+.call {
+  width: 10px;
+  height: 10px;
+  float: left;
+}
+
+.font {
+  text-align: end
+  
+}
+
+h1 {
+  text-align: center;
+}
+
+.bt {
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}

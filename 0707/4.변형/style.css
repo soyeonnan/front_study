@@ -1,0 +1,26 @@
+body {
+  padding: 150px;
+}
+
+div {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+
+  /* 해당 요소를 이동 */
+  /* transform: translate(100px,100px); */
+  /* 이렇게 사용해도 되고 트렌스레이트X,Y도 따로 있음 */
+
+  /* 요소의 크기를 변경(%로는 불가능, 배수가 들어감) */
+  /* transform: scale(2,2); */
+
+  /* 요소의 각도 변경 */
+  transform: rotate(10deg);
+
+  /* 회전 시 중심점 변경을 할 수 있음 */
+  transform-origin: left top;
+
+  /* 요소의 기울기 설정 */
+  transform: skew(15deg, 20deg);
+}
+

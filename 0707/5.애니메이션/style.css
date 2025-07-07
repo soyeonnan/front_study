@@ -1,0 +1,95 @@
+.ani {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+
+  /* 이름 설정 */
+  animation-name: ani;
+
+  /* 재생 시간 */
+  animation-duration: 3s;
+  
+
+  /* 애니메이션 속도 설정 */
+  animation-timing-function: linear;
+
+  /* animation-timing-function: ease; */
+  /* animation-timing-function: ease-in; */
+  /* animation-timing-function: ease-out; */
+
+  /* 애니메이션 반복 횟수 */
+  animation-iteration-count: infinite;
+  /* 인피니트는 무한 */
+
+  /* 역재생 */
+  /* animation-direction: alternate; */
+  animation-direction: reverse;
+
+  /* animation: ani 3s linear infinite alternate; (한줄쓰기)*/
+
+  animation: ani 3s linear;
+
+  /* 끝나고 어떻게 할지 */
+  /* 멈춤 */
+  animation-fill-mode: forwards;
+  /* both -> ? , 백워드 -> 처음상태로 돌아옴 */
+
+}
+
+div:hover {
+  /* 마우스 올릴때만 일시정지 */
+  animation-play-state: paused;
+}
+
+@keyframes ani {
+  /* 프롬과 투를 %로도 지정 가능 */
+  0%{
+    top: 0;
+    left: 0;
+    border-color: aquamarine;
+  }
+  25% {
+    top: 0;
+    left: 200px;
+    background-color: aqua;
+  }
+  50% {
+    top: 200px;
+    left: 200px;
+    border-color: bisque;
+  }
+  75% {
+    top: 200px;
+    left: 0;
+    background-color: blue;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    border-color: blueviolet;
+  }
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid red;
+
+  border-top: 4px solid blue;
+  border-radius: 50%;
+
+  animation: spin 2s linear infinite;
+
+  /* 더 길게 만들고 싶으면 보더-바텀,보더-라이트 이용 */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
