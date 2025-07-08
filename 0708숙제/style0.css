@@ -1,0 +1,37 @@
+.login-form input :focus {
+  background: gray;
+}
+
+.pagination a:hover {
+  background: rgb(228, 238, 172);
+}
+
+.container div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  margin: 30px;
+  transition: all 0.5s ease;
+}
+
+.container div:nth-child(1) {
+  background: red;
+}
+
+.container div:nth-child(2) {
+  background: blue;
+}
+
+.container div:nth-child(3) {
+  background: green;
+}
+
+.container div:nth-child(4) {
+  background: plum;
+}
+
+.container div:hover {
+  box-shadow: 2px 2px 10px gray;
+  transform: scale(1.2);
+}
+

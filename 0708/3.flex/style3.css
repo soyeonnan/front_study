@@ -1,0 +1,54 @@
+.top{
+  border: 1px solid red;
+
+  display: flex;
+  align-self: center;
+  
+}
+
+.md1{
+  width: 500px;
+  height: 500px;
+  background: palegreen;
+ 
+  
+}
+
+.md2{
+  width: 300px;
+  height: 300px;
+  background: rgb(29, 77, 209);
+}
+
+.md3{
+  width: 100px;
+  height: 100px;
+  background: rgb(150, 60, 19);
+  align-items: center;
+}
+
+.con{
+  width: 500px;
+  height: 500px;
+  background: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.con > div {
+  width: 400px;
+  height: 400px;
+  background: palevioletred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.con > div > h1 {
+  width: 300px;
+  height: 300px;
+  background: greenyellow;
+  text-align: center;
+  line-height: 300px;
+}
