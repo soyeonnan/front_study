@@ -1,0 +1,25 @@
+.big{
+  display: grid;
+  grid-template-columns: repeat(3,320px);
+  grid-template-rows: repeat(2,300px);
+  row-gap: 10px;
+ 
+}
+
+.big > div {
+ height: 320px;
+ width: 300px;
+
+ border: 1px solid black;
+  
+}
+
+.big >div> h3{
+  
+  text-align: center;
+  
+}
+
+.big > div>p {
+  font-size: 10px;
+}

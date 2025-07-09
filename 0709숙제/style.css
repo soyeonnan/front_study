@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  
+}
+
+body{
+  /* 일반적으로는 해상도에 맞춤(1280) */
+  width: 1200px;
+  margin: auto;
+}

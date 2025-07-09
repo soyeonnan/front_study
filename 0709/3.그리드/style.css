@@ -1,0 +1,56 @@
+.container{
+  display: grid;
+
+  /* 고정 길이 */
+  /* grid-template-columns: 200px 200px 200px; */
+
+  /* 가변 길이(비율) */
+  /* grid-template-columns: 1fr 2fr 1fr; */
+
+  /* 가변 길이와 고정 길이는 조합도 가능 */
+  /* grid-template-columns: 1fr 2fr 150px; */
+
+  /* 열을 많이 만들고 싶을 땐 리핕이란 함수를 사용 */
+  /* grid-template-columns: repeat(3,1fr); */
+
+  /* 한칸의 너비는 200px, 한줄에 몇 개 넣을지는 안 정함 */
+  /* 리핕은 (개수,단위) + 민맥스넣어도됨*/
+  /* 오토핏은 사이즈도 움직이면서 배열도 움직임 */
+  /* grid-template-columns: repeat(auto-fill,200px); */
+
+  grid-template-columns: repeat(3,minmax(100px,1fr));
+
+  /* 내용이 수정되어도 자동으로 입력 */
+  /* grid-auto-rows: 100px; */
+
+  /* 사이즈에 따라 유동적으로 가능 */
+  /* grid-auto-rows: minmax(100px,300px); */
+
+  /* 컬럼은 길이 로우스는 높이 */
+  /* grid-template-rows: 100px 100px 100px; */
+
+
+
+  /* fr빼고 다 됨 */
+  /* 행,열 */
+  /* gap: 10px; */
+
+  /* 로우갭은 밑에(행), 컬럼은 사이(열) */
+  column-gap: 10px;
+  row-gap: 10px;
+
+
+}
+
+.container>div{
+  background: salmon;
+  border: 1px solid red;
+}
+
+.container > div:nth-child(1) {
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+  grid-column: 1/3;
+
+  grid-row: 1/4;
+}
