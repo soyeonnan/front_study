@@ -10,7 +10,6 @@ b = String(b);
 console.log(typeof b,b);
 
 //숫자 형변환
-
 console.log("12"/"5"); //자동 형변환 (문자인데 숫자로 나옴)
 
 let c = "123";
