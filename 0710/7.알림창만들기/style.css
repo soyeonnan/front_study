@@ -1,0 +1,14 @@
+.alret-box {
+  background: pink;
+  padding: 20px;
+  border-radius: 10px;
+
+  display: none;
+
+}
+
+.alret {
+  background: paleturquoise;
+  height: 100px;
+}
+
