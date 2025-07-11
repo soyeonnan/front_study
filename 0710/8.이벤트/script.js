@@ -22,5 +22,5 @@ btn.addEventListener( 'click', function(){
 btn.removeEventListener( 'click', function(){
   alert('zzzz');
 } )
-
+// 
 //함수를 따로 만들어둬야 가능함?? 아마두?
