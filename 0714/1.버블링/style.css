@@ -1,0 +1,16 @@
+* {
+  padding: 15px;
+
+}
+
+div{
+ border: 1px solid rgb(143, 145, 255);
+}
+
+p {
+ border: 1px solid rgb(236, 116, 252);
+}
+
+b {
+  border: 1px solid rgb(255, 196, 216);
+}

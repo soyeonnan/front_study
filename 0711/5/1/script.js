@@ -31,12 +31,54 @@ for(let i=0; i<FRUITS.length;i++){
 
 const cart = document.querySelectorAll('.cart');
 
-for(let i=0; t<cart.length; i++){
-  cart[i].addEventListener('click',(e)=>{
-   console.log(e.target);
-})
+for(let i=0; i<cart.length; i++) {
+
+  cart[i].addEventListener('click', (e) => {
+    let nameTag = e.target.previousElementSibling.previousElementSibling;
+    let name = nameTag.innerHTML;
+
+    let temp = localStorage.getItem('cart');
+
+    let isHave = false 
+    let index 
+    
+    if( temp != null ) {
+      // 로컬스토리지에 있으면 먼저 그 정보들을 꺼내와야 함
+      // 문자열 형태이므로 원본인 배열로 되돌려줌
+      temp = JSON.parse(temp);
+
+      temp.forEach((data,i) => {
+        if ( data.name === name ) {
+          isHave = true;
+          index = i;
+          
+        }
+      });
+
+      //위 반복문에서 기존 로컬스토리지에 해당 과일이 있는지 없는지
+      //검사를 끝냈으므로 여부에 따라 다르게 처리
+      if(isHave){
+        temp[index].cnt++;
+
+      }else {
+        temp.push( {'name': name , 'cnt': 1} )
+      }
+
+
+      // // 새로 장바구니에 담을 name을 추가 (기존 추가하는 걸 반복문으로 돌리게 되서 필요없어짐)
+      // temp.push(name);
+      // 추가된 정보를 로컬스토리지에 다시 넣음
+      localStorage.setItem('cart', JSON.stringify( temp ));
+
+    } else {
+      localStorage.setItem('cart', JSON.stringify( [ {'name' : name,'cnt':1} ] ));
+    }
+
+
+  })
 
 }
+
 
 
 
